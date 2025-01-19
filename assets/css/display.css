@@ -1,0 +1,75 @@
+
+.close{
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: rgb(245, 12, 12);
+  margin-left: 20px;
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+
+button {
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: rgb(226, 9, 9);
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+
+button::after {
+  transition: 4s;
+  transform-origin: center;
+}
+
+button::before {
+  transform-origin: center;
+  transition: 5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(50%);
+}
+
+button:hover {
+  box-shadow: inset 40px 60px 25px #1479ea;
+}
+@media only screen and (max-width: 768px) {
+  .cartTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.close{
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: rgb(245, 12, 12);
+  margin-right: 40px;
+  margin-bottom: 10px;
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+
+}
